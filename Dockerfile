@@ -15,7 +15,7 @@ ENV GITBOOK_VERSION 3.2.2
 
 RUN gitbook fetch ${GITBOOK_VERSION}
 
-COPY scripts /scripts
+ONBUILD COPY scripts /scripts
 
 WORKDIR /gitbook
 
