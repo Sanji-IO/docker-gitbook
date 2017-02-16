@@ -11,6 +11,8 @@ RUN apt-get update && \
 
 RUN npm install -g gitbook-cli phantomjs
 
+USER gitbook
+
 ENV GITBOOK_VERSION 3.2.2
 
 RUN gitbook fetch ${GITBOOK_VERSION}
